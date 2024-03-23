@@ -31,6 +31,7 @@ const Sidebar = () => {
         {sidebarRoutes.map((route) => (
           <Link
             href={route.href}
+            key={route.href}
             className={cn(
               "flex items-center p-3 pl-6 gap-x-1",
               pathname === route.href && "bg-slate-900 font-medium"

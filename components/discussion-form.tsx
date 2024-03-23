@@ -16,7 +16,7 @@ const DiscussionForm = () => {
     <div className="flex flex-col gap-y-8">
       <h1 className="hidden md:flex bg-slate-300 w-max px-4 py-2 text-red-500 text-2xl font-bold">Discussion Forum</h1>
       {discussionForms.map((form) => (
-        <div className="shadow-md rounded-sm p-4 grid grid-cols-12 gap-x-2">
+        <div className="shadow-md rounded-sm p-4 grid grid-cols-12 gap-x-2" key={form.id}>
           <div className="col-span-1 w-full flex justify-end items-start">
             <Image
               src={form.imgUrl}

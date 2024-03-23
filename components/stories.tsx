@@ -8,7 +8,7 @@ const Stories = () => {
         Stories
       </h1>
       {stories.map((story) => (
-        <div className="bg-white space-y-2 border-x shadow-md">
+        <div className="bg-white space-y-2 border-x shadow-md" key={story.id}>
           <div className="relative aspect-video rounded-sm">
             <Image src={story.imgUrl} fill={true} alt="img" />
           </div>
