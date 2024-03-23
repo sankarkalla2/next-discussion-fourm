@@ -16,7 +16,7 @@ const DiscussionForm = () => {
     <div className="flex flex-col gap-y-8">
       <h1 className="hidden md:flex bg-slate-300 w-max px-4 py-2 text-red-500 text-2xl font-bold">Discussion Forum</h1>
       {discussionForms.map((form) => (
-        <div className="shadow-md rounded-sm p-4 grid grid-cols-12 gap-x-2" key={form.id}>
+        <div className="shadow-md rounded-sm pl-4 pr-1 py-4 grid grid-cols-12 gap-x-2" key={form.id}>
           <div className="col-span-1 w-full flex justify-end items-start">
             <Image
               src={form.imgUrl}
@@ -50,7 +50,7 @@ const DiscussionForm = () => {
               </span>
             </div>
           </div>
-          <div className="col-span-2 truncate text-sm text-blue-500 font-medium">2 min ago</div>
+          <div className="col-span-2 text-xs truncate text-blue-500 font-medium bg-red-300">2 min ago</div>
         </div>
       ))}
     </div>
