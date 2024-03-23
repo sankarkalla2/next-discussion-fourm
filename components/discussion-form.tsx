@@ -50,7 +50,7 @@ const DiscussionForm = () => {
               </span>
             </div>
           </div>
-          <div className="col-span-2 text-xs truncate text-blue-500 font-medium bg-red-300">2 min ago</div>
+          <div className="col-span-2 text-xs truncate text-blue-500 font-medium">2 min ago</div>
         </div>
       ))}
     </div>
